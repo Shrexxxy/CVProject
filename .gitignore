@@ -1,0 +1,33 @@
+# Сборка
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Ll]og/
+[Ll]ogs/
+TestResults/
+*.nupkg
+*.snupkg
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userprefs
+
+# Локальные настройки и секреты
+appsettings.*.local.json
+appsettings.Development.json
+*.env
+.env*
+launchSettings.json
+
+# ОС
+.DS_Store
+Thumbs.db
