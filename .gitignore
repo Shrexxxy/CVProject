@@ -26,7 +26,6 @@ appsettings.*.local.json
 appsettings.Development.json
 *.env
 .env*
-launchSettings.json
 
 # ОС
 .DS_Store
