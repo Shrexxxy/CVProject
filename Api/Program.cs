@@ -2,6 +2,7 @@ using BL;
 using BL.Mapping;
 using DAL;
 using DAL.Equipment;
+using DAL.Seed;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -57,6 +58,7 @@ if (app.Environment.IsDevelopment())
 
     await using var scope = app.Services.CreateAsyncScope();
     await scope.ServiceProvider.GetRequiredService<EquipmentDbContext>().Database.MigrateAsync();
+    await EquipmentTestDataSeeder.SeedAsync(scope.ServiceProvider);
 }
 
 app.MapControllers();
